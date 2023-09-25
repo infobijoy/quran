@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.pl-0 {
+    padding-left: 0px !important;
+}
+.pr-0 {
+    padding-right: 0px !important;
+}
+.ml-0 {
+    margin-left: 0px !important;
+}
+.mr-0 {
+    margin-right: 0 !important;
+}
+.pbg1 {
+    background: rgb(31, 72, 255);
+    color: white !important;
+}
+.pbg2 {
+    background: rgb(15, 53, 221);
+    color: white !important;
+}
+.pbutton1 {
+    background: rgb(58, 48, 121);
+    color: white !important;
+}
+.pbutton1:hover {
+    background: rgb(76, 63, 158);
+    color: rgb(226, 226, 226);
+}
+.pbutton1:focus {
+    background: rgb(54, 45, 117);
+    color: rgb(199, 199, 199);
+}
+.pbutton2 {
+    background: rgb(69, 46, 221);
+    color: white;
+}
+.pbutton2:hover {
+    background: rgb(55, 46, 112);
+    color: rgb(226, 226, 226);
+}
+.pbutton2:focus {
+    background: rgb(90, 73, 201);
+    color: rgb(199, 199, 199);
+}
+.nav-custom {
+    top: 20px;
+    right: 20px;
+}
+.navhed {
+    color: #818080;
+    font-size: 11px;
+}
