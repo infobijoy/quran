@@ -85,17 +85,24 @@
 
     <section class="counter-sec">
         <div class="container">
-            <input type="radio" name="counter" value="0-7"> 0 to 7<br>
-            <input type="radio" name="counter" value="0-33"> 0 to 33<br>
-            <input type="radio" name="counter" value="0-99"> 0 to 99<br>
-            <input type="radio" name="counter" value="0-99-unlimited"> 0 to unlimited<br><br>
+            <label for="vibrationCheckbox">Enable Vibration</label>
+            <input type="checkbox" class="form-check-input" id="vibrationCheckbox"> <br>
 
-            <button onclick="count()">Count One</button>
+            <input id="7" type="radio" name="counter" value="0-7" checked>
+            <label for="7">7</label><br>
+            <input id="33" type="radio" name="counter" value="0-33">
+            <label for="33">33</label><br>
+            <input id="99" type="radio" name="counter" value="0-99">
+            <label for="99">99</label><br>
+            <input id="unlimited" type="radio" name="counter" value="0-99-unlimited">
+            <label for="unlimited">Unlimited</label><br>
             <h1 id="count-display">Count: 0</h1>
+
+            <button class="btn btn-success" onclick="count()">Count One</button>
+
+            <button class="btn btn-warning" onclick="resetCount()">Reset Count</button>
         </div>
     </section>
-
-
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
