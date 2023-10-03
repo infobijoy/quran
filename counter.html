@@ -85,8 +85,11 @@
 
     <section class="counter-sec">
         <div class="container">
-            <label for="vibrationCheckbox">Enable Vibration</label>
-            <input type="checkbox" class="form-check-input" id="vibrationCheckbox"> <br>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="vibrationCheckbox" checked>
+                <label class="form-check-label" for="vibrationCheckbox"><i class="bi bi-phone-vibrate-fill"></i>
+                    Vibration</label>
+            </div>
 
             <input id="7" type="radio" name="counter" value="0-7" checked>
             <label for="7">7</label><br>
