@@ -30,3 +30,30 @@ function resetCount() {
     currentCount = 0;
     document.getElementById("count-display").textContent = "Count: " + currentCount;
 }
+
+
+
+
+
+
+function updateDates() {
+    const currentDate = new Date();
+
+    // Arabic Calendar
+    const arabicDateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', calendar: 'islamic-umalqura' };
+    document.getElementById("arabicDate").textContent = currentDate.toLocaleDateString('ar-EG', arabicDateOptions);
+
+    // English Calendar
+    const englishDateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    document.getElementById("englishDate").textContent = currentDate.toLocaleDateString('en-US', englishDateOptions);
+
+    // Bangla Calendar (Bengali)
+    const banglaDateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', calendar: 'bengali' };
+    document.getElementById("banglaDate").textContent = currentDate.toLocaleDateString('bn-BD', banglaDateOptions);
+}
+
+// Call the function to update dates immediately
+updateDates();
+
+// Update dates every second (1000 milliseconds)
+setInterval(updateDates, 1000);

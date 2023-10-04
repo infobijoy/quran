@@ -75,9 +75,10 @@
     height: 54px;
     width: 100vw;
 }
-.ifarmsec {
-    margin-top: 10px;
+.vw100 {
+ width: 100vw;
 }
+
 .custom-showdow {
     box-shadow: 0px 0px 21px rgb(0 0 0 / 29%);
 }
@@ -101,4 +102,17 @@ h2 {
 }
 .col-12.rounded-2.pbg1.d-flex {
     padding: 6px;
+}
+.circel {
+    height: 55px;
+    width: 55px;
+    border: 1px solid black;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.custom-quran-list {
+
+}
+.full-quran-page {
+    margin-top: 100px;
 }
