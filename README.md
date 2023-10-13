@@ -44,3 +44,4 @@
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=infobijoy&show_icons=true&locale=en" alt="infobijoy" /></p>
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=infobijoy&" alt="infobijoy" /></p>
+# quran
