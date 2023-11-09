@@ -89,9 +89,9 @@
   <div id="englishDate"></div>
   <div id="banglaDate"></div>
   <div class="container">
-    <div id="data-container">
+    <ul id="data-container" class="p-0">
       <!-- Data will be loaded here -->
-    </div>
+    </ul>
   </div>
 
   <script src="data.js"></script>
@@ -102,21 +102,14 @@
 
       // Loop through the data and create HTML elements for each item
       openpage.forEach(item => {
-        const itemDiv = document.createElement('div');
-        itemDiv.classList.add('data-item');
+        const itemDiv = document.createElement('li');
+        itemDiv.classList.add('data-item', 'member', 'col-12');
         itemDiv.innerHTML = `
-        <a href="${item.href}" class="p-0 d-flex text-decoration-none align-items-center text-white col-12 mt-1">
-          <img class="col-2" src="${item.img}">
-          <div class="col-8 text-black d-flex align-items-center ps-2">
-          <div>
-            <h2 class="text-black">${item.title}</h2>
-            <p class="text-black mb-0 ">${item.description}</p>
-          </div>
-          </div>
-          <div class="col-2 text-black d-flex align-items-center justify-content-center">
-            <i class="bi bi-box-arrow-in-right"></i>
-          </div>
-        </a>
+        <div class="thumb"><img src="${item.img}"></div>
+        <div class="description">
+            <h3 class="list-one">${item.title}</h3>
+            <p class="mb-0">${item.description} <br><a href="${item.href}">দেখুন</a></p>
+        </div>
         `;
         dataContainer.appendChild(itemDiv);
       });
