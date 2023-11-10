@@ -185,7 +185,6 @@ h2 {
 	margin-left: -3em;
 	padding: 0.5em;
 }
-
 .member:nth-of-type(even) .thumb {
 	--deg: 86deg;
 	float: right;
@@ -234,18 +233,18 @@ h2 {
 }
 
 .list-one {
-	background: linear-gradient(182deg, rgb(239 13 13) 60%, #2f313a 0 100%);
-	display: inline;
-	transform: rotate(-2deg);
-	position: absolute;
-	margin: 0;
-	margin-top: -2.25em;
-	left: 9vmin;
-	padding: 0.5em 0.75em;
-	color: #56ff40;
-	border-radius: 0.25em;
-	font-size: 1.35em;
-	transform-origin: left bottom;
+    background: linear-gradient(182deg, rgb(239 13 13) 60%, #2f313a 0 100%);
+    display: inline;
+    transform: rotate(-2deg);
+    position: absolute;
+    margin: 0;
+    margin-top: -2.25em;
+    left: 9vmin;
+    padding: 0.3em 0.55em;
+    color: #56ff40;
+    border-radius: 0.25em;
+    font-size: 0.9em;
+    transform-origin: left bottom;
 }
 
 .member:nth-of-type(even) h3 {

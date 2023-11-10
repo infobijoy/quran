@@ -17,17 +17,6 @@
   <!----Custom CSS start---->
   <link rel="stylesheet" href="css/style.css" />
   <style>
-    @import url("https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css");
-    @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500;700&display=swap");
-
-    *,
-    *::before,
-    *::after {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
       --color: rgba(30, 30, 30);
       --bgColor: rgba(245, 245, 245);
@@ -35,21 +24,8 @@
       background: var(--bgColor);
     }
 
-    h1 {
-      text-align: center
-    }
-
     ol {
-      width: min(60rem, 90%);
-      margin-inline: auto;
-
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 2rem;
-
       list-style: none;
-      counter-reset: stepnr;
     }
 
     li:nth-child(6n + 1) {
@@ -78,8 +54,7 @@
 
     ol li {
       counter-increment: stepnr;
-      width: 18rem;
-      --borderS: 2rem;
+      --borderS: .6rem;
       aspect-ratio: 1;
       display: flex;
       flex-direction: column;
@@ -92,16 +67,17 @@
     ol li::after {
       inset: 0;
       position: absolute;
-      border-radius: 50%;
+      border-radius: unset;
       border: var(--borderS) solid var(--bgColor);
       line-height: 1.1;
+      margin: 10px;
     }
 
     ol li::before {
       content: counter(stepnr);
       color: var(--accent-color);
-      padding-left: 10rem;
-      font-size: 12rem;
+      padding-left: 8rem;
+      font-size: 2rem;
       font-weight: 700;
       overflow: hidden;
     }
@@ -111,10 +87,6 @@
       filter: drop-shadow(-0.25rem 0.25rem 0.0675rem rgba(0, 0, 0, 0.75)) blur(5px);
     }
 
-    ol li>* {
-      width: 7.5rem
-    }
-
     ol li .icon {
       font-size: 2rem;
       color: var(--accent-color);
@@ -122,8 +94,11 @@
     }
 
     ol li .title {
-      font-size: 2rem;
-      font-weight: 500
+      font-size: 1rem;
+      font-weight: 500;
+      padding-left: 18px;
+      padding-right: 18px;
+      text-align: center;
     }
 
     ol li .descr {
@@ -141,8 +116,8 @@
       margin: 0;
     }
 
-    .credits a {
-      color: var(--color)
+    .descr.descr-visible {
+      display: block;
     }
   </style>
   <!----Custom CSS End---->
@@ -211,33 +186,47 @@
   <div class="nav-space"></div>
 
 
-  <h1>OL circle cards</h1>
-  <ol>
-    <li>
-      <div class="title">কালেমায়ে তাইয়্যেবা</div>
-      <div class="descr">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, porro.</div>
-    </li>
-    <li>
-      <div class="title">কালেমায়ে শাহাদাত</div>
-      <div class="descr">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, porro.</div>
-    </li>
-    <li>
-      <div class="title">কালেমায়ে তাওহিদ </div>
-      <div class="descr">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, porro.</div>
-    </li>
-    <li>
-      <div class="title">কালেমায়ে তামজিদ</div>
-      <div class="descr">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, porro.</div>
-    </li>
-    <li>
-      <div class="title">কালেমায়ে তামজিদ</div>
-      <div class="descr">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, porro.</div>
-    </li>
-    <li>
-      <div class="title">কালেমায়ে তামজিদ</div>
-      <div class="descr">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, porro.</div>
-    </li>
-  </ol>
+  <div class="bg-info-subtle d-flex justify-content-center">
+    <ol class="col-12 row">
+      <li class="col-6">
+        <div class="title">কালেমায়ে তাইয়্যেবা</div>
+        <div class="descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia aliquid quidem nesciunt
+          amet delectus vero nostrum hic sit sint? Facere maiores quae magnam, aspernatur ad perferendis, numquam
+          perspiciatis id est ipsa hic molestias fuga aperiam! Corrupti repudiandae quod ullam facere nemo. Dicta quo
+          reprehenderit libero nemo eaque porro sequi eligendi in. Animi non fugit exercitationem deleniti, rerum
+          pariatur quia harum nemo voluptate, eaque vitae eius et debitis! Esse tempora quos officiis mollitia expedita
+          repudiandae ducimus corporis est quibusdam, rerum dolor laudantium saepe non nemo nulla, architecto minus,
+          ratione iure sequi odit? Tempora libero maiores accusamus. Mollitia totam fugiat iste nam, nesciunt
+          necessitatibus. Quo quas doloribus magnam molestiae. Nisi labore repellat possimus nam sit quaerat. Cum
+          deleniti distinctio unde tempore, fugiat sint error cupiditate magnam quasi explicabo excepturi beatae earum
+          perferendis sunt ipsa quos nemo impedit voluptate suscipit ea dolores quas. Eum beatae libero, nesciunt
+          laboriosam eligendi velit quidem, ad dolorum magni fuga eius fugiat numquam. Doloribus quo aliquid harum, eos
+          quam ullam neque officiis iste velit ratione ab quidem, deleniti laborum non incidunt vel ea. Commodi, et
+          possimus laboriosam dolor delectus deserunt optio accusantium aut itaque assumenda vitae soluta, blanditiis
+          inventore, provident error. Tenetur vitae blanditiis excepturi suscipit reiciendis architecto!</div>
+      </li>
+      <li class="col-6">
+        <div class="title">কালেমায়ে শাহাদাত</div>
+        <div class="descr">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, porro.</div>
+      </li>
+      <li class="col-6">
+        <div class="title">কালেমায়ে তাওহিদ </div>
+        <div class="descr">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, porro.</div>
+      </li>
+      <li class="col-6">
+        <div class="title">কালেমায়ে তামজিদ</div>
+        <div class="descr">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, porro.</div>
+      </li>
+      <li class="col-6">
+        <div class="title">কালেমায়ে তামজিদ</div>
+        <div class="descr">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, porro.</div>
+      </li>
+      <li class="col-6">
+        <div class="title">কালেমায়ে তামজিদ</div>
+        <div class="descr">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, porro.</div>
+      </li>
+    </ol>
+  </div>
 
   <style>
     .descr {
@@ -251,23 +240,11 @@
     // Add click event listener to each li element
     liElements.forEach(li => {
       li.addEventListener('click', () => {
-        // Toggle the visibility of the .descr element inside the clicked li
+        // Toggle the visibility class on the .descr element inside the clicked li
         const descrElement = li.querySelector('.descr');
-        descrElement.style.display = (descrElement.style.display === 'none' || descrElement.style.display ===
-          '') ? 'block' : 'none';
-      });
-    });
-
-    // Get all li elements
-    const liElement = document.querySelectorAll('li');
-
-    // Add click event listener to each li element
-    liElement.forEach(li => {
-      li.addEventListener('click', () => {
-        // Toggle the visibility of the .descr element inside the clicked li
-        const descrElement = li.querySelector('.title');
-        descrElement.style.display = (descrElement.style.display === 'block' || descrElement.style.display ===
-          '') ? 'none' : 'block';
+        const liElement = li.querySelector('col-6');
+        descrElement.classList.toggle('descr-visible');
+        liElement.classList.toggle('col-12');
       });
     });
   </script>
